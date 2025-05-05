@@ -1,16 +1,32 @@
-# MAC Address Changer
+# macchanger 🧙‍♂️ — because naming things is hard
 
-A Python utility for Windows that allows users to view and change MAC addresses on network interfaces.
+A lightweight MAC address spoofing utility designed *specifically for Windows 11*.  
+Why? Because all the other tools we tried threw tantrums or silently failed on recent Windows 11 builds — and when you're onsite during a physical security engagement, that's not the time for debugging.
 
-## Features
+## 🎯 Purpose
 
-- List all available network interfaces with their current MAC addresses
-- Change MAC addresses manually or generate random ones
-- User-friendly GUI interface
-- Command-line interface for automation
-- Interactive mode for easier adapter selection
-- Administrator privilege check
-- Support for both wired and wireless adapters
+`macchanger` is built to support physical security teams and red teamers who need quick, reliable MAC spoofing on modern Windows 11 systems — without messy dependencies or driver drama.
+
+## ✅ Features
+
+- 🔄 Spoof MAC addresses with ease on Windows 11
+- 🧹 Restore original MAC address after engagement
+- ⚡ CLI-friendly for automation
+- 🔒 Minimal footprint for OPSEC-sensitive work
+
+## 🚫 Why not use the usual suspects?
+
+Most *nix-oriented tools don’t play nice with Windows 11 anymore. Either they:
+- Crash on execution
+- Require outdated WinPcap/Npcap tweaks
+- Fail silently when interacting with modern adapters
+
+We built this because we got tired of explaining to clients why our spoofing failed during a demo. Now it just works™️.
+
+## 🧪 Tested On
+
+- ✅ Windows 11 Pro (23H2 and newer)
+- ✅ Intel & Realtek adapters (USB + onboard)
 
 ## Requirements
 
